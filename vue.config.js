@@ -1,5 +1,5 @@
 module.exports = {
-    publicPath: '/perlin-noise-hex-map/',
+    publicPath: '/perlin/',
     /* devServer: {
       port: 3000    
     } */
