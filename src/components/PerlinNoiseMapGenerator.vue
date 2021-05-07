@@ -15,7 +15,7 @@
         <!-- Tile size -->
         <span class="setting-title">Tile size: {{ mapParameters.tileSize }}</span>
         <div>
-          <input type="range" class="range-slider" min="10" max="100" step="1" v-model="mapParameters.tileSize" @mouseup="generateMap" @keyup="generateMap">
+          <input type="range" class="range-slider" min="10" max="100" step="1" v-model="mapParameters.tileSize" @mouseup="generateMap" @keyup="generateMap" @touchend="generateMap">
         </div>
         <hr>
         <!-- Show grid -->
@@ -29,12 +29,12 @@
         <!-- Grid height (number of tiles) -->
         <span class="setting-title">Grid height (tiles): {{ mapParameters.gridHeightTiles }}</span>
         <div>
-          <input type="range" class="range-slider" min="1" max="100" step="1" v-model="mapParameters.gridHeightTiles" @mouseup="generateMap" @keyup="generateMap">
+          <input type="range" class="range-slider" min="1" max="100" step="1" v-model="mapParameters.gridHeightTiles" @mouseup="generateMap" @keyup="generateMap" @touchend="generateMap">
         </div>
         <!-- Grid width (number of tiles) -->
         <span class="setting-title">Grid width (tiles): {{ mapParameters.gridWidthTiles }}</span>
         <div>
-          <input type="range" class="range-slider" min="1" max="100" step="1" v-model="mapParameters.gridWidthTiles" @mouseup="generateMap" @keyup="generateMap">
+          <input type="range" class="range-slider" min="1" max="100" step="1" v-model="mapParameters.gridWidthTiles" @mouseup="generateMap" @keyup="generateMap" @touchend="generateMap">
         </div>
       </div>
       
@@ -42,12 +42,12 @@
         <!-- Noise scale -->
         <span class="setting-title">Noise scale: {{ mapParameters.noiseScale }}</span>
         <div>
-          <input type="range" class="range-slider" min="0.01" max="0.15" step="0.01" v-model="mapParameters.noiseScale" @mouseup="generateMap" @keyup="generateMap">
+          <input type="range" class="range-slider" min="0.01" max="0.15" step="0.01" v-model="mapParameters.noiseScale" @mouseup="generateMap" @keyup="generateMap" @touchend="generateMap">
         </div>
         <!-- Sea/Terrain ratio -->
         <span class="setting-title">Sea/Terrain ratio: {{ Math.round(mapParameters.seaToTerrainRatio*100) }}</span>
         <div>
-          <input type="range" class="range-slider" min="0.01" max="1.00" step="0.01" v-model.number="mapParameters.seaToTerrainRatio" @mouseup="generateMap" @keyup="generateMap">
+          <input type="range" class="range-slider" min="0.01" max="1.00" step="0.01" v-model.number="mapParameters.seaToTerrainRatio" @mouseup="generateMap" @keyup="generateMap" @touchend="generateMap">
         </div>
       </div>
       
@@ -55,12 +55,12 @@
         <!-- Deep/Shallow sea ratio-->
         <span class="setting-title">Deep/Shallow sea ratio: {{ Math.round(mapParameters.deepSeaToShallowSeaRatio*100) }}</span>
         <div>
-          <input type="range" class="range-slider" min="0.01" max="1.00" step="0.01" v-model.number="mapParameters.deepSeaToShallowSeaRatio" @mouseup="generateMap" @keyup="generateMap">
+          <input type="range" class="range-slider" min="0.01" max="1.00" step="0.01" v-model.number="mapParameters.deepSeaToShallowSeaRatio" @mouseup="generateMap" @keyup="generateMap" @touchend="generateMap">
         </div>
         <!-- Sand/Woods ratio -->
         <span class="setting-title">Sand/Woods ratio: {{ Math.round(mapParameters.sandToWoodsRatio*100) }}</span>
         <div>
-          <input type="range" class="range-slider" min="0.01" max="1.00" step="0.01" v-model.number="mapParameters.sandToWoodsRatio" @mouseup="generateMap" @keyup="generateMap">
+          <input type="range" class="range-slider" min="0.01" max="1.00" step="0.01" v-model.number="mapParameters.sandToWoodsRatio" @mouseup="generateMap" @keyup="generateMap" @touchend="generateMap">
         </div>
       </div>
       
